@@ -56,8 +56,8 @@
       "label": "find_assignee_slackid_in_csv()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "read_incoming_message()",
+      "community": 2,
+      "community_name": "slackmentionbot.py",
       "file_type": "code",
       "norm_label": "find_assignee_slackid_in_csv()",
       "source_file": "slackmentionbot.py",
@@ -68,8 +68,8 @@
       "label": "get_assignee_string()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "read_incoming_message()",
+      "community": 2,
+      "community_name": "slackmentionbot.py",
       "file_type": "code",
       "norm_label": "get_assignee_string()",
       "source_file": "slackmentionbot.py",
@@ -80,8 +80,8 @@
       "label": "read_incoming_message()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "read_incoming_message()",
+      "community": 2,
+      "community_name": "slackmentionbot.py",
       "file_type": "code",
       "norm_label": "read_incoming_message()",
       "source_file": "slackmentionbot.py",
@@ -92,7 +92,7 @@
       "label": "handle_errors()",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "handle_errors()",
       "file_type": "code",
       "norm_label": "handle_errors()",
@@ -144,6 +144,17 @@
       "source_location": "L70"
     },
     {
+      "id": "message",
+      "label": "message",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "slackmentionbot.py",
+      "file_type": "code",
+      "norm_label": "message",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "slackmentionbot",
       "label": "slackmentionbot.py",
       "_origin": "ast",
@@ -155,21 +166,10 @@
       "source_location": "L1"
     },
     {
-      "id": "message",
-      "label": "message",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "read_incoming_message()",
-      "file_type": "code",
-      "norm_label": "message",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "error",
       "label": "error",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "handle_errors()",
       "file_type": "code",
       "norm_label": "error",
@@ -399,6 +399,18 @@
   ],
   "links": [
     {
+      "source": "create_slack_userid_csv_create_csv_file_for_slack_userid_data",
+      "target": "csv",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "create_slack_userid_csv.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
       "source": "create_slack_userid_csv_start",
       "target": "create_slack_userid_csv_create_csv_file_for_slack_userid_data",
       "relation": "calls",
@@ -420,6 +432,30 @@
       "context": "call",
       "source_file": "create_slack_userid_csv.py",
       "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "slackmentionbot_find_assignee_slackid_in_csv",
+      "target": "csv",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "slackmentionbot.py",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "slackmentionbot_get_assignee_string",
+      "target": "re",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "slackmentionbot.py",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -894,5 +930,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "97585ab7490bda7cb2a67ee20c2e94fe624548f7"
+  "built_at_commit": "5c4fc82e47d9ff4309c81188ba1581c64d46d4b0"
 }
