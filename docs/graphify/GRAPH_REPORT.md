@@ -1,7 +1,7 @@
-# Graph Report - slackbotmention  (2026-10-12)
+# Graph Report - slackbotmention  (2026-10-19)
 
 ## Corpus Check
-- Corpus is ~15,150 words - fits in a single context window. You may not need a graph.
+- Corpus is ~13,447 words - fits in a single context window. You may not need a graph.
 
 ## Summary
 - 35 nodes · 45 edges · 4 communities (2 shown, 2 thin omitted)
